@@ -22,8 +22,8 @@ app.add_middleware(
 
 # 3. Definisikan ulang custom metric MAE
 def mae(y_true, y_pred):
-    # Pastikan depth sesuai dengan jumlah kelas kamu (6)
-    y_true_one_hot = tf.one_hot(tf.cast(y_true, tf.int32), depth=6)
+    # Ubah depth dari 6 menjadi 8
+    y_true_one_hot = tf.one_hot(tf.cast(y_true, tf.int32), depth=8)
     return tf.reduce_mean(tf.abs(y_true_one_hot - y_pred))
 
 
@@ -32,7 +32,16 @@ print("Memuat model AI PilahYuk!...")
 # Pastikan file "sampah_classifier.keras" ada di folder yang sama dengan app.py
 model = load_model("sampah_classifier.keras", custom_objects={"mae": mae})
 
-class_names = ["Kaca", "Kardus", "Kertas", "Logam", "Plastik", "Residu"]
+class_names = [
+    "Kaca",
+    "Kardus",
+    "Kertas",
+    "Logam",
+    "Plastik",
+    "Residu",
+    "Biological",
+    "Clothes",
+]
 
 
 @app.get("/")
@@ -63,3 +72,9 @@ async def predict_sampah(file: UploadFile = File(...)):
         }
     except Exception as e:
         return {"status": "error", "message": str(e)}
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=True)
