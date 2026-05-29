@@ -83,8 +83,11 @@ Transfer learning dengan custom metric MAE, custom callback untuk early stopping
 ## 🚀 Langsung aja coba
 
 ```bash
-# 1. Yuk Akses Langsung
+# 1. Yuk Akses Langsung Modelnya
 https://hugpy-klasifikasi-sampah-risol-matcha.hf.space/docs
+
+# 2. Cek juga hasil websitenya
+https://pilah-yuk.devlabfortirta.cloud
 ```
 
 ---
@@ -110,6 +113,10 @@ pilayhuk/
 └── README.md
 ```
 
+---
+## 📌 Catatan
+
+- Checklist Menggunakan API Generative AI untuk fitur tambahan atau fitur sekunder pada aplikasi diterapkan langsung pada backend Aplikasi dan bosa langsung di gunakan, tidak dicantumkan langsung pada Notebook yang dibuat
 ---
 
 *Dibuat sebagai bagian dari Capstone Project — PilahYuk! 🌿*
