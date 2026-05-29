@@ -28,8 +28,6 @@
 | MAE | 0.0118 | 0.0199 | **0.0181** |
 | Loss | 0.0820 | 0.2856 | 0.2300 |
 
-> Target MBKM tercapai di Epoch 39 — Val Accuracy: **92.90%** (≥ 85%) dan Val MAE: **0.0199** (≤ 0.02). Training dihentikan otomatis oleh custom callback untuk mencegah overfitting.
-
 ---
 
 ## 🗂️ Kelas yang Didukung
