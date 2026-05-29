@@ -14,10 +14,10 @@
 
 ### Side Quest (Nilai Tambah)
 - [✓] Mengembangkan REST API mandiri menggunakan **FastAPI** (`app.py`)
-- [✓] Menggunakan API Generative AI untuk fitur tambahan — chatbot yang menjawab pertanyaan seputar topik sampah dan daur ulang
+- [✓] Menggunakan API Generative AI untuk fitur tambahan, chatbot yang menjawab pertanyaan seputar topik sampah dan daur ulang
 - [✓] Mengimplementasikan training dan evaluation loop kustom secara penuh dari awal menggunakan **tf.GradientTape**
 - [✓] Mengintegrasikan **TensorBoard** untuk memantau dan memvisualisasikan metrik pelatihan
-- [✓] Model memiliki performa baik — **Akurasi ≥ 85%** dan **MAE ≤ 0.02** ✓
+- [✓] Model memiliki performa baik **Akurasi ≥ 85%** dan **MAE ≤ 0.02** ✓
 
 ---
 
